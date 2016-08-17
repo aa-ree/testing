@@ -5,7 +5,7 @@ function Str(s){
 Str.prototype.reverse = function(){
 	var s = this.s,
 		str = "";
-		
+
 		for(var i = s.length-1; i >= 0; i--){
 			str += s[i];
 		}
@@ -13,4 +13,4 @@ Str.prototype.reverse = function(){
 }
 
 var s = new Str('hello');
-s.reverse();
+console.log('reverse hello: '+s.reverse());
